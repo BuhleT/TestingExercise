@@ -1,0 +1,24 @@
+name: Self-Hosted Runner Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: Buhle
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Verify Runner is Active
+        run: echo "Runner Buhle is running this job!"
+
+      - name: List Files in Repository
+        run: ls -la  # Lists all files in the working directory
+
+      - name: Run a Simple Test
+        run: echo "GitHub Actions on self-hosted runner is working!"
