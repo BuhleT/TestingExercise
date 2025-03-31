@@ -1,0 +1,6 @@
+To install dependency use: mvn clean install
+Having issues with unresolved libraries: mvn -U idea:idea
+Reload maven project on maven icon to refresh your maven project.
+
+Element locator extensions: SelectorsHub
+Learn about POM - page object model
